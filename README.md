@@ -61,11 +61,16 @@ This ROS simulation guide will be done with a pre built robot from Turtlebot3 an
       
 ### SLAM simulation 
 
-1. To run SLAM node \
+1. Launch Simulation World \
+ `export TURTLEBOT3_MODEL=waffle_pi` \
+ `roslaunch turtlebot3_gazebo turtlebot3_world.launch`
+ 
+2. To run SLAM node \
+  Open a new terminal from Remote PC with Ctrl + Alt + T and run the SLAM node. Gmapping SLAM method is used by default
     `export TURTLEBOT3_MODEL=waffle_pi`\
     `roslaunch turtlebot3_slam turtlebot3_slam.launch slam_methods:=gmapping`
  
-2. Run Teleoperation Node
+3. Run Teleoperation Node
     Open a new terminal from Remote PC with Ctrl + Alt + T and run the teleoperation node from the Remote PC. \
     `roslaunch turtlebot3_teleop turtlebot3_teleop_key.launch` 
     ``` Control Your TurtleBot3!
@@ -80,3 +85,16 @@ This ROS simulation guide will be done with a pre built robot from Turtlebot3 an
          space key, s : force stop
 
          CTRL-C to quit```
+       
+4. Save the map  
+
+    When the map is created successfully, open a new terminal from Remote PC with Ctrl + Alt + T and save the map. 
+    
+    `rosrun map_server map_saver -f ~/map` 
+    
+  ### Result
+  ![SLAM](https://user-images.githubusercontent.com/53359513/123687118-35215d00-d859-11eb-9767-025442e812b0.jpg)
+  
+  
+  
+
