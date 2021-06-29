@@ -25,10 +25,10 @@ This ROS simulation guide will be done with a pre built robot from Turtlebot3 an
   ros-melodic-gmapping ros-melodic-navigation ros-melodic-interactive-markers
   ```
   
-  3. Install TurtleBot3 Packages \
+  3. Install TurtleBot3 Packages 
   
-    `sudo apt-get install ros-melodic-dynamixel-sdk`\
-    `sudo apt-get install ros-melodic-turtlebot3-msgs`\
+    `sudo apt-get install ros-melodic-dynamixel-sdk`
+    `sudo apt-get install ros-melodic-turtlebot3-msgs`
     `sudo apt-get install ros-melodic-turtlebot3`
      
      
@@ -46,15 +46,15 @@ This ROS simulation guide will be done with a pre built robot from Turtlebot3 an
     - `echo "export TURTLEBOT3_MODEL=burger" >> ~/.bashrc`    
      In my case I will be using the waffle model
      
-    - `echo "export TURTLEBOT3_MODEL=waffle_pi" >> ~/.bashrc` \
+    - `echo "export TURTLEBOT3_MODEL=waffle_pi" >> ~/.bashrc` 
     
       to launch the simulator into an empty world `roslaunch turtlebot3_gazebo turtlebot3_empty_world.launch`
       
       to launch into TurtleBot3 World 
-      `roslaunch turtlebot3_gazebo turtlebot3_world.launch`\
+      `roslaunch turtlebot3_gazebo turtlebot3_world.launch`
       
       to launch into TurtleBot3 House 
-      `roslaunch turtlebot3_gazebo turtlebot3_house.launch`\
+      `roslaunch turtlebot3_gazebo turtlebot3_house.launch`
       
       *NOTE*: If TurtleBot3 House is launched for the first time, downloading the map may take more than a few minutes depending the network status.
       *How to quit the simulator?* Go to terminal and press `CTRL` with `C`
@@ -73,7 +73,8 @@ This ROS simulation guide will be done with a pre built robot from Turtlebot3 an
 3. Run Teleoperation Node
     Open a new terminal from Remote PC with Ctrl + Alt + T and run the teleoperation node from the Remote PC. \
     `roslaunch turtlebot3_teleop turtlebot3_teleop_key.launch` 
-    ``` Control Your TurtleBot3!
+    ``` 
+    Control Your TurtleBot3 with your keyboard!
          ---------------------------
          Moving around:
                 w
@@ -84,7 +85,8 @@ This ROS simulation guide will be done with a pre built robot from Turtlebot3 an
          a/d : increase/decrease angular velocity
          space key, s : force stop
 
-         CTRL-C to quit```
+         CTRL-C to quit
+         ```
        
 4. Save the map  
 
